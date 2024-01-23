@@ -1,0 +1,707 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: grid;
+    height: 690vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 1fr 5fr 1fr;
+
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    background-color: whitesmoke
+}
+
+menu .pick {
+    display: none;
+}
+
+.logo img {
+    width: 190px;
+    height: 11vh;
+    margin-left: 10px;
+    padding-top: 5px;
+
+}
+
+menu ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    padding-right: 20px;
+    padding-top: 40px;
+
+}
+
+menu ul li a:hover {
+    background: rgb(215, 203, 255);
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+menu ul a {
+    text-decoration: none;
+    display: grid;
+    place-items: center;
+}
+
+header {
+    background-color: blue;
+    background: url(https://www.passerellesnumeriques.org/wp-content/uploads/2016/04/PNP_graduation-ceremony_2-1.jpg);
+    background-size: 1550px 895px;
+    background-color: rgb(134, 133, 133);
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    height: 120vh;
+}
+
+.pharagraph {
+    display: grid;
+    padding: 90px 0 0 50px;
+    color: white;
+
+}
+
+.pharagraph p {
+    font-size: 20px;
+}
+
+.h1 {
+    color: white;
+    font-size: 40px;
+}
+
+main {
+    display: grid;
+    /* grid-template-rows: 1.5fr 1.3fr 1.2fr 1.3fr 1.5fr 1fr ; */
+    margin-top: 30px;
+}
+
+.PNC-value {
+    display: grid;
+    height: 90vh;
+    grid-template-rows: 0.1fr 1fr;
+    padding-top: 70px;
+
+}
+
+.respect,
+.responsibility {
+    padding-right: 20px;
+}
+
+.h1-value,
+.h1-cateen,
+.h1-sport,
+.h1-aerobic {
+    text-align: center;
+    padding-top: 15px;
+}
+
+
+.box {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 20px;
+    margin: 20px;
+    gap: 20px;
+}
+
+.box p {
+    padding-top: 10px;
+}
+
+.a {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.a img {
+    height: 50px;
+    width: 70px;
+}
+
+.b {
+    text-align: center;
+    margin-bottom: 5px;
+
+}
+
+.box1-2,
+.box4-5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 10px;
+    gap: 20px;
+
+}
+
+.box3 {
+    background-color: cadetblue;
+}
+
+.box-one,
+.box-two,
+.box-four,
+.box-five,
+.box-three {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+
+}
+
+.box-one,
+.box-two,
+.box-three,
+.box-four,
+.box-five {
+    border: 1px solid #000;
+}
+
+
+.box-three {
+    height: 130px;
+    width: 60%;
+    margin-left: 250px;
+    background-color: rgb(247, 217, 220);
+}
+
+.box-one {
+    background-color: rgb(216, 231, 255);
+}
+
+.box-two,
+.box-one,
+.box-four,
+.box-five p {
+    padding-right: 20%;
+}
+
+.box-two {
+    background-color: rgb(216, 211, 164);
+}
+
+.box-four {
+    background-color: rgb(209, 207, 202);
+}
+
+.box-three p {
+    padding-right: 40%;
+}
+
+.box-five {
+    background-color: rgb(123, 169, 253);
+}
+
+.main-icon {
+    background-color: brown;
+}
+
+
+.Cateen {
+    display: grid;
+    height: 75vh;
+    grid-template-rows: 0.1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 60px;
+    grid-template-areas:
+        'h1 h1'
+        'menu table ';
+}
+
+.h1-cateen {
+    grid-area: h1;
+}
+
+.menu-inconteen {
+    grid-area: menu;
+
+}
+
+.table {
+    grid-area: table;
+    width: 95%;
+    margin-top: 25px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption {
+    background-color: rgb(94, 94, 255);
+}
+
+td,
+th {
+    border: 1px solid black;
+    padding: 13px;
+    text-align: center;
+
+}
+
+.menu-inconteen {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 5px;
+}
+
+.menu-inconteen img {
+    width: 265px;
+    height: 160px;
+    display: grid;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.menu-then {
+    padding-right: 50px;
+}
+
+.menu p {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.Sport {
+    padding-top: 70px;
+    height: 50vh;
+}
+
+.p-img {
+    display: grid;
+    grid-template-rows: 0.6fr 1fr;
+}
+
+.sport-p {
+    display: grid;
+    place-items: center;
+}
+
+
+
+.image-sport {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+
+
+}
+
+.image-sport p {
+    text-align: center;
+}
+
+.Aerobic {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 10fr;
+    place-items: center;
+    padding-top: 10px;
+    gap: 10px;
+    height: 110vh;
+}
+
+.Aerobic h2 {
+    padding-top: 10%;
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+.img-aerobic {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.img-aerobic img {
+    width: 400px;
+    height: 240px;
+}
+
+.join-us {
+    padding-top: 25px;
+    background-color: rgb(241, 241, 241);
+
+}
+
+.contact-us-container {
+    width: 100%;
+    background-image: url(/images/bg2.jpg);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.join-us,
+.contact-us-container,
+.contact-us-content,
+.content h2 {
+    color: black;
+    text-align: center;
+}
+
+.contact-us-content {
+    width: 90%;
+    color: white;
+    padding-left: 30px;
+}
+
+.content {
+    width: 75%;
+    padding: 10px;
+    margin-top: 75px;
+}
+
+.content h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.contact-us-form {
+    width: 100%;
+    height: 70vh;
+    color: white;
+    align-items: center;
+    display: grid;
+    justify-content: center;
+    padding-top: 90px;
+}
+
+.contact-us-form form {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    width: 100%;
+    background: white;
+    color: black;
+    display: grid;
+    padding: 0px 20px;
+    border-radius: 10px;
+    height: 70vh;
+}
+
+.contact-us-container .contact-us-form form h2 {
+    color: teal;
+}
+
+.username,
+.passwords,
+.email,
+.gender,
+.date,
+.subject,
+.file,
+.fruit,
+form button {
+    margin: 10px 0px;
+}
+
+.contact-us-form form h2 {
+    text-align: center;
+}
+
+.username,
+.passwords {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.username input,
+.passwords input {
+    width: 48%;
+    padding: 3px 0px;
+}
+
+.email input {
+    width: 99%;
+    padding: 3px 0px;
+}
+
+.gender,
+.subject {
+    display: flex;
+}
+
+.genders input,
+.subjects input {
+    font-size: 2px;
+}
+
+.contact-us-form form .fruit {
+    padding: 3px 0px;
+}
+
+.contact-us-form form label {
+    margin-right: 10px;
+}
+
+.contact-us-form form button {
+    background: teal;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+iframe {
+    height: 60vh;
+    width: 100%;
+    padding-bottom: 100px;
+    padding-left: 25px;
+}
+
+footer {
+    display: grid;
+    grid-template-rows: 0.1fr 0.9fr;
+    padding-top: 90px;
+}
+
+footer h2 {
+    text-align: center;
+}
+
+.footer {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.values h3:hover {
+    color: blue;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.major h3:hover {
+    color: blue;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.department h3:hover {
+    color: blue;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.social-media h3:hover {
+    color: blue;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.value-of-pnc,
+p,
+.major-of-pnc,
+p,
+.department-of-pnc {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.values,
+.major,
+.department,
+.social-media,
+h3 {
+    padding-left: 20px;
+}
+
+.social {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    padding-top: 20px;
+}
+
+.social img {
+    width: 40px;
+    padding-left: 20px;
+}
+
+.link {
+    font-size: 40px;
+}
+
+@media(max-width:768px) {
+
+    .PNC-value {
+        height: auto;
+    }
+
+    menu ul {
+        display: none;
+    }
+
+    menu .pick {
+
+        display: block;
+        z-index: 1;
+
+    }
+
+    .pick {
+        padding-left: 300px;
+        overflow: hidden;
+    }
+
+    .pick .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        width: 50px;
+        height: 35px;
+        text-align: right;
+        background-color: inherit;
+        font-family: inherit;
+        margin: auto;
+        cursor: pointer;
+    }
+
+    .pick-content li{
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        align-items: center;
+        padding-right: 10px;
+        padding-top: 40px;
+       
+    
+    }
+    .menu-icon{
+        margin-top: 20px;
+        margin-left: 300px;
+        /* background: #000; */
+    }
+    .pick-content li a{
+        text-decoration: none;
+        place-items: center;
+    }
+    
+    .pick-content {
+        display: none;
+        position: absolute;
+        background-color: #68656513;
+        min-width: 100px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .pick-content a {
+        float: none;
+        color: rgb(248, 246, 246);
+        padding: 2px 6px;
+        display: block;
+        text-align: left;
+        background: #000;
+    }
+
+    .pick-content a:hover {
+        background-color: teal;
+    }
+
+    .pick:hover .pick-content {
+        display: block;
+    }
+
+    .box-one,
+    .box-two,
+    .box-four,
+    .box-five,
+    .box-three {
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+    .box-three .p {
+        display: none;
+    }
+
+    .box-three .b {
+        display: grid;
+        place-content: center;
+    }
+
+    .Cateen {
+        place-items: center;
+        height: auto;
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'a '
+            'b'
+            'c'
+        ;
+    }
+
+    .h1-cateen {
+        grid-area: a;
+    }
+
+    .menu-inconteen {
+        grid-area: c;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu-on,
+    .menu-then {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .h1-cateen h2 {
+
+        font-size: 20px;
+    }
+
+}
+
+
+.menu-inconteen img {
+    width: 155px;
+    height: 120px;
+    padding-top: 20px;
+}
+
+.menu-then img {
+    padding-top: 20px;
+    padding-right: 30px;
+}
+
+.menu-inconteen {
+    width: 10px;
+}
+
+.table {
+    padding-right: 210px;
+}
+
+.image-sport img {
+    background-color: blue;
+    width: 200px;
+    height: 190px;
+}
+
+
+
+
+
+@media(max-width:600px) {}
